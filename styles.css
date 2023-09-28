@@ -1,0 +1,209 @@
+/* .name to define css of classes */
+
+header {
+    text-align: center;
+}
+
+.header-content {
+    display: flex; /* Use flexbox to align elements horizontally */
+    align-items: center; /* Vertically center-align elements */
+    justify-content: center; /* Horizontally center-align elements */
+}
+.header-button {
+    border: 10px inset purple;
+    background-color: pink; /* Example background color for the button */
+    color: white; /* Text color for the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 50px; /* Adjust the font size as needed */
+    font-family: "Dancing Script", cursive;
+    color: maroon;
+    cursor: pointer;
+}
+
+/* Style the button on hover (example) */
+.header-button:hover {
+    background-color: #0056b3; /* Example background color on hover */
+}
+
+.flex-container {
+    /* to use flexbox, must have the display:flex line */
+    display:flex;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.form {
+    margin: 15px;
+}
+
+.image {
+    display:flex;
+    flex-wrap:wrap;
+    border-radius: 8px;
+    width: 20vw;
+    height: 10vw;
+}
+
+/* Style for the flashcard container */
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for each individual flashcard */
+.flashcard {
+    width: 200px;
+    height: 150px;
+    background-color: burlywood;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Add this to position front and back sides */
+}
+
+/* Style for the front side of the flashcard */
+/* Style for the front side of the flashcard */
+/* Style for the front side of the flashcard */
+.flashcard .front {
+    background-color: red;
+    font-size: 50px;
+    color: gold;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back face */
+    transform: rotateY(0deg); /* Ensure front side is visible initially */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the back side of the flashcard */
+.flashcard .back {
+    background-color: gold;
+    font-size: 50px;
+    font-family: "Comic Sans MS", cursive;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back face */
+    transform: rotateY(180deg); /* Rotate to show back side initially */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the active class (when card is flipped) */
+.flashcard.active .front {
+    transform: rotateY(180deg); /* Rotate to hide front side */
+}
+
+.flashcard.active .back {
+    transform: rotateY(0deg); /* Rotate to show back side */
+}
+
+.flashcard:hover {
+    background-color:black;
+}
+.button {
+    background-color: red;
+    outline: green;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 30px;
+    width:15vw;
+    margin: 200px;
+    transition-duration: 0.4s;
+}
+.button:hover {
+    background-color: gold;
+    color: red;
+}
+
+.text{
+    color:red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+text
+/* #name to define css of ids */
+#iframe {
+    width:50vw;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: yellowgreen;
+    background-image: url('https://media.tenor.com/uqOIuxCZPqgAAAAd/china-flag-chinese.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.quiz {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Computer-screen-code-glitch-animation-gif-background-free.gif/1280px-Computer-screen-code-glitch-animation-gif-background-free.gif);
+    background-size: cover;
+}
+
+ 
+body.result {
+    background-image: url('https://i.pinimg.com/originals/e5/83/3e/e5833e1bea7d379f0f4e4ae250b7cf81.gif')
+}
+
+texty {
+    color: black;
+    font-size: 30 px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+}
+
+h1.resultss {
+    color: black;
+    font-size: 80 px;
+    text-align: center;
+    font-family:Trattatello, fantasy;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.centered-input {
+    width: 30%; /* Set the width to your desired value */
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure it takes up the full width available */
+}
