@@ -34,7 +34,12 @@ const correctAnswers = [
 document.addEventListener("DOMContentLoaded", function () {
 const submitButton = document.getElementById("submit-button");
 submitButton.addEventListener("click", checkAnswers);
-});
+
+
+//if (score < 5) {
+//submitButton.href = "goodresults.html"
+//}
+//});
 
 //const ow = document.getElementById('pp');
 function checkAnswers() {
@@ -52,7 +57,12 @@ userScore++;
 //ow.textContent += varr;
 }
 
+
 score = userScore;
+
+
+sessionStorage.setItem("temp", score);
+
 stupid(score);
 
 document.getElementById("score").textContent = score;
@@ -112,4 +122,4 @@ return false;
 
 
 
-
+})

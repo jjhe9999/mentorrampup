@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head id="header">
+        
+        
+        <title>"congrats!"
+        </title>
+        <h1 class="resultss">congratulations! </h1>
+        <p id="pp"></p>
+        <!--<div>Your score is <span id="score"></span></div>
+        <div>Your temp score is <span id="tempy"></span></div>
+        <h1 class="resultss">terrible job</h1>
+        <div>Your score is <span id='sadge'></span></div>
+        -->
+        <link rel="stylesheet" href="styles.css">
+        <p id="sadge"></p>
+        <h1 class="resultss">your score is: <span id="displayPoo"></span></h1>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+        // Retrieve a value from Session Storage
+        var poo = sessionStorage.getItem("temp");
+
+        // Display the value of "poo" in an HTML element
+        document.getElementById('displayPoo').textContent = poo;
+    });
+            //const user = localStorage.getItem('tracked')
+            //document.getElementById('why').textContent = user;
+            //var poo = sessionStorage.getItem("temp");
+            //document.getElementById('displayPoo').textContent = poo
+        
+        </script>
+
+        
+    
+    </head>
+
+    <body class="result">
+        
+        <div>
+            <center>
+                <a href="code.html">
+                    <button onclick="startQuizzing()" class="button">click here to return home</button>
+                </a>
+            </center>
+               
+                
+            
+    
+   
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
